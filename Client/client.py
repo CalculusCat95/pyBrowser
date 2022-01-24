@@ -15,14 +15,10 @@ while True:
                     )
 
         if reply == '1':
-            url = "https://pybrowser.jons2.repl.co/served.py"
+            url = "https://pybrowser.jons2.repl.co/Server/test%20apps/served.py"
 
         elif reply == '2':
-            url = "https://pybrowser.jons2.repl.co/tktest.py"
-
-        else:
-            print("Invalid Entry! Please try again.")    
-
+            url = "https://pybrowser.jons2.repl.co/Server/test%20apps/tktest.py"
 
     response = urllib.request.urlopen(url)
     exec(response.read())
