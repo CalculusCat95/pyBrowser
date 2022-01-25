@@ -1,1 +1,3 @@
-print(1)
+import sys
+sys.path.append("Server")
+import server
