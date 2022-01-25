@@ -1,1 +1,1 @@
-python3 [path to file needs to go here]
+python3 Client/client.py
