@@ -1,4 +1,4 @@
-import urllib.request
+import requests
 
 def main():
 
@@ -22,10 +22,6 @@ def main():
             elif reply == '2':
                 url = "https://pybrowser.jons2.repl.co/tktest.py"
 
-        try:
-            response = urllib.request.urlopen(url)
-            exec(response.read())
-        except:
-            print("Invalid URL: " + url)
-
+            r = requests.get(url, allow_redirects=True)
+            exec(r.content)
 main()
