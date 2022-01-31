@@ -24,14 +24,14 @@ def main():
             if reply == '1':
                 url = "https://pybrowser.jons2.repl.co/served.py"
 ## the 'try' thing prevents it from stopping if there's an error
-            try:
+        try:
 ## gets the python file from the url
-                r = requests.get(url, allow_redirects=True)
+            r = requests.get(url, allow_redirects=True)
 ## runs the file with the python interpreter
-                exec(r.content)
+            exec(r.content)
 ## executes this if there's an error
-            except:
+        except:
 ## error message
-                print("There was an error. Please make sure you entered the correct URL and the file being accessed does not contain an error")
+            print("There was an error. Please make sure you entered the correct URL and the file being accessed does not contain an error")
 ## runs main function (for testing), the start menu shortcut will call it for us when it's installed, so this part won't matter
 main()
