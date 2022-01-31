@@ -5,7 +5,7 @@ import requests
 def main():  
 
 ## welcome message
-    print(""""Welcome to PyBrowser 1.0! \n This glorious wonder of technology allows you to load a 
+    print("""Welcome to PyBrowser 1.0! \n This glorious wonder of technology allows you to load a 
     Python application from the web and execute it on your computer. It functions similarly to a standard web browser,
     but allows you to run real apps.""")
 ## loops forever, so that multiple programs can be loaded
