@@ -22,7 +22,7 @@ def main():
                         )
 ## checks which program to use
             if reply == '1':
-                url = "https://pybrowser.jons2.repl.co/served.py"
+                url = "https://raw.githubusercontent.com/CalculusCat95/pyBrowser/main/Server/test%20apps/served.py"
 ## the 'try' thing prevents it from stopping if there's an error
         try:
 ## gets the python file from the url
