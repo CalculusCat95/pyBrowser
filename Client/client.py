@@ -22,13 +22,13 @@ def main():
                         )
 ## checks which program to use
             if reply == '1':
-                url = "https://raw.githubusercontent.com/CalculusCat95/pyBrowser/main/Server/test%20apps/served.py"
+                url = "https://raw.githubusercontent.com/CalculusCat95/pyBrowser/main/test%20apps/served.py"
 ## the 'try' thing prevents it from stopping if there's an error
         try:
 ## gets the python file from the url
-            r = requests.get(url, allow_redirects=True)
-## runs the file with the python interpreter
-            exec(r.content)
+                r = requests.get(url, allow_redirects=True)
+                ## runs the file with the python interpreter
+                exec(r.content)
 ## executes this if there's an error
         except:
 ## error message
